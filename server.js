@@ -27,6 +27,7 @@ app.use(helmet.contentSecurityPolicy({
       scriptSrc: ["'self'", "https://cdn.jsdelivr.net"],
       workerSrc: ["'self'", "blob:"],
       objectSrc: ["'none'"],
+      formAction: ["'self'", "http:"],
     },
   }));
 
